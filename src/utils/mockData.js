@@ -20,25 +20,25 @@ export const electricityData = {
       value: 5
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 14
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 16
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 15
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 17
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 14
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 12
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 13
     }]
   },
@@ -63,25 +63,25 @@ export const electricityData = {
       value: 5
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 115
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 125
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 130
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 120
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 115
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 90
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 85
     }]
   }
@@ -105,25 +105,25 @@ export const waterData = {
       value: 5
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 480
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 520
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 490
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 510
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 500
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 470
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 530
     }]
   },
@@ -145,25 +145,25 @@ export const waterData = {
       value: 10
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 1900
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 2100
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 2000
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 2050
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 1950
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 1800
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 1700
     }]
   }
@@ -184,25 +184,25 @@ export const gasData = {
       value: 15
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 1.8
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 2.1
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 2.0
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 2.2
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 1.9
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 1.7
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 2.3
     }]
   },
@@ -221,25 +221,25 @@ export const gasData = {
       value: 10
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 9.5
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 10.2
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 10.0
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 10.5
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 9.8
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 8.5
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 8.0
     }]
   }
@@ -263,25 +263,25 @@ export const wasteData = {
       value: 10
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 4.8
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 5.2
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 4.9
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 5.1
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 5.0
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 4.7
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 5.3
     }]
   },
@@ -303,25 +303,25 @@ export const wasteData = {
       value: 10
     }],
     history: [{
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 19
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 21
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 20
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 20.5
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 19.5
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 18
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 17
     }]
   }
@@ -389,87 +389,87 @@ export const suggestions = {
 export const forecasts = {
   household: {
     electricity: [{
-      date: '2023-04-24',
+      date: '2026-04-24',
       value: 14,
       type: 'actual'
     }, {
-      date: '2023-04-25',
+      date: '2026-04-25',
       value: 15,
       type: 'actual'
     }, {
-      date: '2023-04-26',
+      date: '2026-04-26',
       value: 14.5,
       type: 'actual'
     }, {
-      date: '2023-04-27',
+      date: '2026-04-27',
       value: 15.2,
       type: 'actual'
     }, {
-      date: '2023-04-28',
+      date: '2026-04-28',
       value: 14.8,
       type: 'actual'
     }, {
-      date: '2023-04-29',
+      date: '2026-04-29',
       value: 13,
       type: 'actual'
     }, {
-      date: '2023-04-30',
+      date: '2026-04-30',
       value: 12.5,
       type: 'actual'
     }, {
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 14,
       type: 'actual'
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 16,
       type: 'actual'
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 15,
       type: 'actual'
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 17,
       type: 'actual'
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 14,
       type: 'actual'
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 12,
       type: 'actual'
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 13,
       type: 'actual'
     }, {
-      date: '2023-05-08',
+      date: '2026-05-08',
       value: 14.5,
       type: 'forecast'
     }, {
-      date: '2023-05-09',
+      date: '2026-05-09',
       value: 15.2,
       type: 'forecast'
     }, {
-      date: '2023-05-10',
+      date: '2026-05-10',
       value: 15.8,
       type: 'forecast'
     }, {
-      date: '2023-05-11',
+      date: '2026-05-11',
       value: 16.1,
       type: 'forecast'
     }, {
-      date: '2023-05-12',
+      date: '2026-05-12',
       value: 15.5,
       type: 'forecast'
     }, {
-      date: '2023-05-13',
+      date: '2026-05-13',
       value: 13.2,
       type: 'forecast'
     }, {
-      date: '2023-05-14',
+      date: '2026-05-14',
       value: 13.8,
       type: 'forecast'
     }],
@@ -477,87 +477,87 @@ export const forecasts = {
   },
   workplace: {
     electricity: [{
-      date: '2023-04-24',
+      date: '2026-04-24',
       value: 110,
       type: 'actual'
     }, {
-      date: '2023-04-25',
+      date: '2026-04-25',
       value: 115,
       type: 'actual'
     }, {
-      date: '2023-04-26',
+      date: '2026-04-26',
       value: 118,
       type: 'actual'
     }, {
-      date: '2023-04-27',
+      date: '2026-04-27',
       value: 120,
       type: 'actual'
     }, {
-      date: '2023-04-28',
+      date: '2026-04-28',
       value: 117,
       type: 'actual'
     }, {
-      date: '2023-04-29',
+      date: '2026-04-29',
       value: 95,
       type: 'actual'
     }, {
-      date: '2023-04-30',
+      date: '2026-04-30',
       value: 90,
       type: 'actual'
     }, {
-      date: '2023-05-01',
+      date: '2026-05-01',
       value: 115,
       type: 'actual'
     }, {
-      date: '2023-05-02',
+      date: '2026-05-02',
       value: 125,
       type: 'actual'
     }, {
-      date: '2023-05-03',
+      date: '2026-05-03',
       value: 130,
       type: 'actual'
     }, {
-      date: '2023-05-04',
+      date: '2026-05-04',
       value: 120,
       type: 'actual'
     }, {
-      date: '2023-05-05',
+      date: '2026-05-05',
       value: 115,
       type: 'actual'
     }, {
-      date: '2023-05-06',
+      date: '2026-05-06',
       value: 90,
       type: 'actual'
     }, {
-      date: '2023-05-07',
+      date: '2026-05-07',
       value: 85,
       type: 'actual'
     }, {
-      date: '2023-05-08',
+      date: '2026-05-08',
       value: 120,
       type: 'forecast'
     }, {
-      date: '2023-05-09',
+      date: '2026-05-09',
       value: 125,
       type: 'forecast'
     }, {
-      date: '2023-05-10',
+      date: '2026-05-10',
       value: 130,
       type: 'forecast'
     }, {
-      date: '2023-05-11',
+      date: '2026-05-11',
       value: 127,
       type: 'forecast'
     }, {
-      date: '2023-05-12',
+      date: '2026-05-12',
       value: 120,
       type: 'forecast'
     }, {
-      date: '2023-05-13',
+      date: '2026-05-13',
       value: 95,
       type: 'forecast'
     }, {
-      date: '2023-05-14',
+      date: '2026-05-14',
       value: 90,
       type: 'forecast'
     }],
@@ -740,28 +740,28 @@ export const notifications = {
     id: 1,
     title: 'Unusual electricity spike detected',
     message: 'Unusual spike in kitchen electricity at 2:00 PM. This is 40% higher than your typical usage.',
-    timestamp: '2023-05-07T14:30:00',
+    timestamp: '2026-05-07T14:30:00',
     read: false,
     category: 'electricity'
   }, {
     id: 2,
     title: 'Water leak possible',
     message: 'Continuous water flow detected for over 3 hours. Please check for leaks.',
-    timestamp: '2023-05-06T18:45:00',
+    timestamp: '2026-05-06T18:45:00',
     read: true,
     category: 'water'
   }, {
     id: 3,
     title: 'Goal achievement',
     message: "Congratulations! You've reached 50% of your electricity reduction goal.",
-    timestamp: '2023-05-05T09:15:00',
+    timestamp: '2026-05-05T09:15:00',
     read: false,
     category: 'goal'
   }, {
     id: 4,
     title: 'New suggestion available',
     message: "We've analyzed your usage and found a new way to save on heating costs.",
-    timestamp: '2023-05-03T11:20:00',
+    timestamp: '2026-05-03T11:20:00',
     read: true,
     category: 'suggestion'
   }],
@@ -769,35 +769,35 @@ export const notifications = {
     id: 1,
     title: 'Server room temperature alert',
     message: 'Server room temperature has increased by 5°C, resulting in higher electricity usage for cooling.',
-    timestamp: '2023-05-07T10:30:00',
+    timestamp: '2026-05-07T10:30:00',
     read: false,
     category: 'electricity'
   }, {
     id: 2,
     title: 'Weekend water usage',
     message: 'Significant water usage detected during weekend hours when the facility is closed.',
-    timestamp: '2023-05-06T08:15:00',
+    timestamp: '2026-05-06T08:15:00',
     read: true,
     category: 'water'
   }, {
     id: 3,
     title: 'Monthly report available',
     message: 'Your April 2023 sustainability report is now available for download.',
-    timestamp: '2023-05-05T13:45:00',
+    timestamp: '2026-05-05T13:45:00',
     read: false,
     category: 'report'
   }, {
     id: 4,
     title: 'Waste reduction milestone',
     message: 'Office waste reduced by 15% this month compared to last month. Great progress!',
-    timestamp: '2023-05-03T16:20:00',
+    timestamp: '2026-05-03T16:20:00',
     read: true,
     category: 'waste'
   }, {
     id: 5,
     title: 'Maintenance reminder',
     message: 'HVAC system is due for maintenance to ensure optimal energy efficiency.',
-    timestamp: '2023-05-02T09:10:00',
+    timestamp: '2026-05-02T09:10:00',
     read: false,
     category: 'maintenance'
   }]
