@@ -26,7 +26,7 @@ export const Header = ({
             <div className="w-8 h-8 rounded-full bg-green-700 flex items-center justify-center">
               <UserIcon size={16} className="text-white" />
             </div>
-            <span className="text-gray-700">John Doe</span>
+            <span className="text-gray-700">Kerim Karakan</span>
             <ChevronDownIcon size={16} className="text-gray-500" />
           </button>
           {isProfileOpen && <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 border border-gray-200">

@@ -21,7 +21,7 @@ export const Login = ({
           </div>
         </div>
         <h2 className="text-xl font-semibold text-center text-gray-700 mb-6">
-          Welcome to your resource management platform
+          Your resource management platform
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">

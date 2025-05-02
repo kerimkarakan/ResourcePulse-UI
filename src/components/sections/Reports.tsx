@@ -6,13 +6,13 @@ export const Reports = ({
   const [selectedPeriod, setSelectedPeriod] = useState('monthly');
   const frameworks = [{
     id: 'GRI',
-    name: 'Global Reporting Initiative'
+    name: 'Global Reporting Initiative (GRI)'
   }, {
     id: 'SASB',
-    name: 'Sustainability Accounting Standards Board'
+    name: 'Sustainability Accounting Standards Board (SASB)'
   }, {
     id: 'CDP',
-    name: 'Carbon Disclosure Project'
+    name: 'Carbon Disclosure Project (CDP)'
   }];
   const periods = [{
     id: 'weekly',

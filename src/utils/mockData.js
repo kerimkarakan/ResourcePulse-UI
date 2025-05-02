@@ -345,7 +345,7 @@ export const suggestions = {
     id: 3,
     title: 'Lower thermostat by 1°C',
     description: 'Reducing your heating temperature by just 1°C can save up to 10% on your energy bill.',
-    savings: '1.5 therms/week',
+    savings: '1 therms/week',
     costSavings: '$1.80/week',
     category: 'gas'
   }, {
