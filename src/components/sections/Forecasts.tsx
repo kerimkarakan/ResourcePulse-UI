@@ -1,47 +1,61 @@
-import React, { useState } from 'react';
-import { forecasts } from '../../utils/mockData';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { ZapIcon, DropletIcon, FlameIcon, TrashIcon } from 'lucide-react';
-export const Forecasts = ({
-  userType
-}) => {
-  const [resource, setResource] = useState('electricity');
-  const getResourceIcon = resourceType => {
+import React, { useState } from 'react'
+import { forecasts } from '../../utils/mockData'
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  ReferenceLine,
+  Legend,
+} from 'recharts'
+import { ZapIcon, DropletIcon, FlameIcon, TrashIcon } from 'lucide-react'
+export const Forecasts = ({ userType }) => {
+  const [resource, setResource] = useState('electricity')
+  const getResourceIcon = (resourceType) => {
     const icons = {
       electricity: ZapIcon,
       water: DropletIcon,
       gas: FlameIcon,
-      waste: TrashIcon
-    };
-    const Icon = icons[resourceType] || ZapIcon;
-    return <Icon size={20} className="text-white" />;
-  };
-  const getResourceColor = resourceType => {
+      waste: TrashIcon,
+    }
+    const Icon = icons[resourceType] || ZapIcon
+    return <Icon size={20} className="text-white" />
+  }
+  const getResourceColor = (resourceType) => {
     const colors = {
       electricity: 'bg-yellow-600',
       water: 'bg-blue-600',
       gas: 'bg-red-600',
-      waste: 'bg-gray-600'
-    };
-    return colors[resourceType] || 'bg-green-700';
-  };
+      waste: 'bg-gray-600',
+    }
+    return colors[resourceType] || 'bg-green-700'
+  }
   const getResourceData = () => {
-    // Currently only electricity forecasts are implemented in mock data
-    return forecasts[userType].electricity;
-  };
-  const getResourceUnit = resourceType => {
+    // Process the data to create separate keys for actual and forecast values
+    const rawData = forecasts[userType].electricity
+    return rawData.map((point) => ({
+      ...point,
+      actualValue: point.type === 'actual' ? point.value : null,
+      forecastValue: point.type === 'forecast' ? point.value : null,
+    }))
+  }
+  const getResourceUnit = (resourceType) => {
     const units = {
       electricity: 'kWh',
       water: 'L',
       gas: 'therms',
-      waste: 'kg'
-    };
-    return units[resourceType];
-  };
-  const data = getResourceData();
-  const today = new Date().toISOString().split('T')[0];
-  const unit = getResourceUnit(resource);
-  return <div>
+      waste: 'kg',
+    }
+    return units[resourceType]
+  }
+  const data = getResourceData()
+  const today = new Date().toISOString().split('T')[0]
+  const unit = getResourceUnit(resource)
+  return (
+    <div>
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-gray-800">
           AI-Powered Forecasts
@@ -50,16 +64,31 @@ export const Forecasts = ({
       </div>
       <div className="mb-6">
         <div className="flex flex-wrap gap-2">
-          <button onClick={() => setResource('electricity')} className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'electricity' ? 'bg-yellow-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}>
+          <button
+            onClick={() => setResource('electricity')}
+            className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'electricity' ? 'bg-yellow-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+          >
             Electricity
           </button>
-          <button onClick={() => setResource('water')} className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'water' ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`} disabled>
+          <button
+            onClick={() => setResource('water')}
+            className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'water' ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`}
+            disabled
+          >
             Water (Coming Soon)
           </button>
-          <button onClick={() => setResource('gas')} className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'gas' ? 'bg-red-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`} disabled>
+          <button
+            onClick={() => setResource('gas')}
+            className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'gas' ? 'bg-red-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`}
+            disabled
+          >
             Gas (Coming Soon)
           </button>
-          <button onClick={() => setResource('waste')} className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'waste' ? 'bg-gray-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`} disabled>
+          <button
+            onClick={() => setResource('waste')}
+            className={`px-4 py-2 rounded-full text-sm font-medium ${resource === 'waste' ? 'bg-gray-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} opacity-50 cursor-not-allowed`}
+            disabled
+          >
             Waste (Coming Soon)
           </button>
         </div>
@@ -77,38 +106,65 @@ export const Forecasts = ({
           <div className="p-4">
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={data} margin={{
-                top: 20,
-                right: 30,
-                left: 20,
-                bottom: 10
-              }}>
+                <LineChart
+                  data={data}
+                  margin={{
+                    top: 20,
+                    right: 30,
+                    left: 20,
+                    bottom: 10,
+                  }}
+                >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="date" tickFormatter={date => {
-                  const d = new Date(date);
-                  return `${d.getMonth() + 1}/${d.getDate()}`;
-                }} />
+                  <XAxis
+                    dataKey="date"
+                    tickFormatter={(date) => {
+                      const d = new Date(date)
+                      return `${d.getMonth() + 1}/${d.getDate()}`
+                    }}
+                  />
                   <YAxis />
-                  <Tooltip formatter={value => [`${value} ${unit}`, 'Consumption']} labelFormatter={date => new Date(date).toLocaleDateString()} />
+                  <Tooltip
+                    formatter={(value) => [`${value} ${unit}`, 'Consumption']}
+                    labelFormatter={(date) =>
+                      new Date(date).toLocaleDateString()
+                    }
+                  />
                   <ReferenceLine x={today} stroke="#ff0000" label="Today" />
-                  <Line type="monotone" dataKey="value" stroke="#2E7D32" strokeWidth={2} dot={{
-                  fill: '#2E7D32',
-                  r: 4
-                }} activeDot={{
-                  r: 6
-                }} name="Actual" />
+                  <Line
+                    type="monotone"
+                    dataKey="actualValue"
+                    stroke="#2E7D32"
+                    strokeWidth={2}
+                    dot={{
+                      fill: '#2E7D32',
+                      r: 4,
+                    }}
+                    activeDot={{
+                      r: 6,
+                    }}
+                    name="Actual"
+                    connectNulls={true}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="forecastValue"
+                    stroke="#A5D6A7"
+                    strokeWidth={2}
+                    strokeDasharray="5 5"
+                    dot={{
+                      fill: '#A5D6A7',
+                      r: 4,
+                    }}
+                    activeDot={{
+                      r: 6,
+                    }}
+                    name="Forecast"
+                    connectNulls={true}
+                  />
+                  <Legend />
                 </LineChart>
               </ResponsiveContainer>
-            </div>
-            <div className="flex mt-4 items-center justify-center space-x-8">
-              <div className="flex items-center">
-                <div className="w-4 h-4 bg-green-700 rounded mr-2"></div>
-                <span className="text-sm text-gray-600">Actual</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-4 h-4 bg-green-300 rounded mr-2"></div>
-                <span className="text-sm text-gray-600">Forecast</span>
-              </div>
             </div>
           </div>
         </div>
@@ -168,5 +224,6 @@ export const Forecasts = ({
           </div>
         </div>
       </div>
-    </div>;
-};
+    </div>
+  )
+}
