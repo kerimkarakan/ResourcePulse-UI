@@ -1,0 +1,1 @@
+ResourcePulse is an AI-powered platform that enables households and workplaces to manage and optimize their consumption of electricity, water, gas, and waste through real-time monitoring and predictive analytics.
